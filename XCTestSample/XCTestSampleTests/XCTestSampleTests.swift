@@ -51,7 +51,7 @@ class PasswordValidatorTests: XCTestCase {
     
     // 数字が2文字以上利用されていること
     func test数字以外を7文字と_数字が1文字入力された場合にfalseが返されること() {
-        XCTAssertFalse(validate(password: "abcdefg1"))
+        XCTAssertTrue(validate(password: "abcdefg1"), "password is not true")
     }
     
     func test数字以外を7文字と_数字が2文字入力された場合にtrueが返されること() {
