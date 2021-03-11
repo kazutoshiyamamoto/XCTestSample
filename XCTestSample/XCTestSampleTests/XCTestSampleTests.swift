@@ -9,11 +9,12 @@ import XCTest
 @testable import XCTestSample
 
 class XCTestSampleTests: XCTestCase {
-    
+    // 各テストメソッドごとの初期化を行う
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
+    // 各テストメソッドごとの後処理を行う
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
@@ -76,5 +77,23 @@ class PasswordValidatorTests: XCTestCase {
                 XCTAssertTrue(validate(password: "abcdefg12"))
             }
         }
+    }
+}
+
+extension String {
+    func isOnlyNumeric() -> Bool {
+        // 文字列を.decimalDigitsのみでトリミングした場合に存在する文字の数が0個以下
+        return self.trimmingCharacters(in: .decimalDigits).count <= 0
+    }
+}
+
+func assertOnlyNumeric(string: String) {
+    XCTAssertTrue(string.isOnlyNumeric(), "\"\(string)\" is not only numeric.")
+}
+
+class NumericStringTests: XCTestCase {
+    func testIsOnlyNumericString() {
+        let numericStr = "a0123456789"
+        assertOnlyNumeric(string: numericStr)
     }
 }

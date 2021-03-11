@@ -16,6 +16,7 @@
 		FD55D8D525F4FE5B0094588C /* XCTestSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55D8D425F4FE5B0094588C /* XCTestSampleTests.swift */; };
 		FD55D8E025F4FE5B0094588C /* XCTestSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55D8DF25F4FE5B0094588C /* XCTestSampleUITests.swift */; };
 		FD793D7325F66F8B005756FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55D8C125F4FE550094588C /* ViewController.swift */; };
+		FDAF8B1D25FA480D00382877 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF8B1C25FA480D00382877 /* String+Extensions.swift */; };
 		FDB55C2A25F66FF1006CFCD2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB55C2925F66FF1006CFCD2 /* Model.swift */; };
 		FDB55C2E25F67017006CFCD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55D8C125F4FE550094588C /* ViewController.swift */; };
 		FDB55C3525F6704F006CFCD2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB55C2925F66FF1006CFCD2 /* Model.swift */; };
@@ -53,6 +54,7 @@
 		FD55D8DB25F4FE5B0094588C /* XCTestSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCTestSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD55D8DF25F4FE5B0094588C /* XCTestSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestSampleUITests.swift; sourceTree = "<group>"; };
 		FD55D8E125F4FE5B0094588C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDAF8B1C25FA480D00382877 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		FDB55C2925F66FF1006CFCD2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				FD55D8BF25F4FE550094588C /* SceneDelegate.swift */,
 				FD55D8C125F4FE550094588C /* ViewController.swift */,
 				FDB55C2925F66FF1006CFCD2 /* Model.swift */,
+				FDAF8B1C25FA480D00382877 /* String+Extensions.swift */,
 				FD55D8C325F4FE550094588C /* Main.storyboard */,
 				FD55D8C625F4FE5A0094588C /* Assets.xcassets */,
 				FD55D8C825F4FE5A0094588C /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDAF8B1D25FA480D00382877 /* String+Extensions.swift in Sources */,
 				FD55D8C225F4FE550094588C /* ViewController.swift in Sources */,
 				FDB55C2A25F66FF1006CFCD2 /* Model.swift in Sources */,
 				FD55D8BE25F4FE550094588C /* AppDelegate.swift in Sources */,
