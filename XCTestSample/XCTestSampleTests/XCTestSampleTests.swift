@@ -87,8 +87,12 @@ extension String {
     }
 }
 
-func assertOnlyNumeric(string: String) {
-    XCTAssertTrue(string.isOnlyNumeric(), "\"\(string)\" is not only numeric.")
+func assertOnlyNumeric(string: String,
+                       file: StaticString = #file,
+                       line: UInt = #line) {
+    XCTAssertTrue(string.isOnlyNumeric(), "\"\(string)\" is not only numeric.",
+                  file: file,
+                  line: line)
 }
 
 class NumericStringTests: XCTestCase {
