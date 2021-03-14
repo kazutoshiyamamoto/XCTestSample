@@ -101,3 +101,16 @@ class NumericStringTests: XCTestCase {
         assertOnlyNumeric(string: numericStr)
     }
 }
+
+class AsyncTests: XCTestCase {
+    func testAsyncString() {
+        let exp = XCTestExpectation(description: "Async String")
+        
+        asyncString { string in
+            XCTAssertEqual(string, "文字列A")
+            exp.fulfill()
+        }
+        
+        wait(for: [exp], timeout: 5.0)
+    }
+}
