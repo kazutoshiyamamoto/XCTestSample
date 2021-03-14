@@ -20,3 +20,11 @@ func validate(password: String) -> Bool {
     let numString = password.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
     return numString.count >= 2
 }
+
+func asyncString(completion: ((String) -> ())?) {
+    DispatchQueue.global().async {
+        sleep(3)
+        
+        completion?("文字列A")
+    }
+}
