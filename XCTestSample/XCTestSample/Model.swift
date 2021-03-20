@@ -28,3 +28,17 @@ func asyncString(completion: ((String) -> ())?) {
         completion?("文字列A")
     }
 }
+
+enum OperationError: Error {
+    case divisionByZero
+}
+
+func divide(_ x: Int, by y: Int) throws -> Int {
+    if y == 0 {
+        throw OperationError.divisionByZero
+    }
+    
+    return x / y
+}
+
+
